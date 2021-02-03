@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paintbox</title>
+
+    <!--★★★★★★★★★★★-->
+    <!--       JS & CSS      -->
+    <!--★★★★★★★★★★★-->
+    <script src="main.js" defer></script>
+
+    <style type="text/css">
+      @import url("reset.css");
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!--★★★★★★★★★★★-->
+    <!--     Font & Icon     -->
+    <!--★★★★★★★★★★★-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--★★★★★★★★★★★-->
+  <!--       HTML          -->
+  <!--★★★★★★★★★★★-->
+  <body>
+    <nav id="navbar">
+      <ul class="navbar__menu__left">
+        <li class="left__menu__item">NAIL STUDIOS</li>
+        <li class="left__menu__item">SHOP PRODUCT</li>
+      </ul>
+      <a clas="navbar__menu__center">
+        <img src="img/logo/paintbox-logo.png" class="navbar__menu__logo" />
+      </a>
+      <ul class="navbar__menu__right">
+        <li class="right__menu__item">JOURNAL</li>
+        <li class="right__menu__item">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="basket">0</span>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="intro">
+      <div class="intro__container full row">
+        <div class="intro__photo half">
+          <img src="img/intro-img.jpg" />
+        </div>
+        <div class="intro__text half column">
+          <div class="content__center">
+            <div class="content__title">
+              <p>
+                Manis and magic go hand in hand. Re-connect over Paintbox nails
+                in the new year with in-studio and virtual mani dates.
+              </p>
+            </div>
+            <a href="#" class="content__btn">
+              <button>discover more</button>
+              <span>
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation">
+      <div class="reservation__container eighty row">
+        <div class="reservation__photo half">
+          <img src="img/reservation-img.jpeg" />
+        </div>
+        <div class="reservation__text half column">
+          <div class="content__center">
+            <div class="content__category">
+              <h1>our studios</h1>
+            </div>
+            <div class="content__title">
+              <p>
+                Book new nails at our Soho flagship studio or our new Uptown
+                studio.
+              </p>
+            </div>
+            <div class="content__btn">
+              <button>book a manicure</button>
+              <span>
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="product__container eighty column">
+        <div class="product__category">
+          <h1>the shop</h1>
+          <p>Our Newest Polish Colors</p>
+        </div>
+        <div class="product__content row">
+          <div class="product column">
+            <div class="product__img">
+              <img src="img/color-img-1.JPG" />
+            </div>
+            <div class="product__description column">
+              <div class="product__title">
+                <h1>power couple</h1>
+                <span>NEW!</span>
+              </div>
+              <p class="italic">Like Gilded + Like Velvet</p>
+              <span class="price">$40.00</span>
+            </div>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="product column">
+            <div class="product__img">
+              <img src="img/color-img-2.JPG" />
+            </div>
+            <div class="product__description column">
+              <div class="product__title">
+                <h1>power couple</h1>
+              </div>
+              <p class="italic">Like Camel + Like Midnight</p>
+              <span class="price">$40.00</span>
+            </div>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="product column">
+            <div class="product__img">
+              <img src="img/color-img-3.JPG" />
+            </div>
+            <div class="product__description column">
+              <div class="product__title">
+                <h1>power couple</h1>
+              </div>
+              <p class="italic">Like Lilac + Like Muse</p>
+              <span class="price">$40.00</span>
+            </div>
+            <button>ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gift">
+      <div class="gift__container eighty row">
+        <div class="gift__photo half">
+          <img src="img/gift-img.jpg" />
+        </div>
+        <div class="gift__text half column">
+          <div class="content__center">
+            <div class="content__category">
+              <h1>gift cards</h1>
+            </div>
+            <div class="content__title">
+              <p>
+                Give the gift of the Paintbox experience for a manicure that
+                tells a story.
+              </p>
+            </div>
+            <div class="content__btn">
+              <button>buy a gift card</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inspiration">
+      <div class="inspiration__container eighty column">
+        <div class="inspiration__text">
+          <h1>inspiration</h1>
+          <h2>How to use it:</h2>
+          <span class="italic"> Like Gilded + Like Velvett</span>
+        </div>
+        <div class="inspiration__content row">
+          <div class="inspiration__items column">
+            <div class="inspiration__item">
+              <img src="img/inspiration/inspiration-img-1.JPG" />
+            </div>
+            <span>01</span>
+          </div>
+          <div class="inspiration__items column">
+            <div class="inspiration__item">
+              <img src="img/inspiration/inspiration-img-2.JPG" />
+            </div>
+            <span>02</span>
+          </div>
+          <div class="inspiration__items column">
+            <div class="inspiration__item">
+              <img src="img/inspiration/inspiration-img-3.JPG" />
+            </div>
+            <span>03</span>
+          </div>
+          <div class="inspiration__items column">
+            <div class="inspiration__item">
+              <img src="img/inspiration/inspiration-img-4.JPG" />
+            </div>
+            <span>04</span>
+          </div>
+          <div class="inspiration__items column">
+            <div class="inspiration__item">
+              <img src="img/inspiration/inspiration-img-5.JPG" />
+            </div>
+            <span>05</span>
+          </div>
+          <div class="inspiration__items column">
+            <div class="inspiration__item">
+              <img src="img/inspiration/inspiration-img-6.JPG" />
+            </div>
+            <span>06</span>
+          </div>
+        </div>
+        <div class="inspiration__btn">
+          <button>shop power couple</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="magazin">
+      <div class="magazin__container eighty column">
+        <div class="row">
+          <div class="magazin__photo half">
+            <img src="img/magazin/magazin-img-1.jpg" />
+          </div>
+          <div class="magazin__text half">
+            <div class="content__center magazin">
+              <div class="content__category magazin">
+                <span>Dec 10, 2020</span>
+              </div>
+              <div class="content__title magazin">
+                <p>New and Now: The Paint Box</p>
+              </div>
+              <div class="read-story">
+                <span>READ STORY</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="magazin__text half">
+            <div class="content__center">
+              <div class="content__category">
+                <span>Dec 10, 2020</span>
+              </div>
+              <div class="content__title">
+                <p>New and Now: The Paint Box</p>
+              </div>
+              <div class="read-story">
+                <span>READ STORY</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="magazin__photo half">
+            <img src="img/magazin/magazin-img-2.jpg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="magazin__photo half">
+            <img src="img/magazin/magazin-img-3.jpg" />
+          </div>
+          <div class="magazin__text half">
+            <div class="content__center">
+              <div class="content__category">
+                <span>Dec 10, 2020</span>
+              </div>
+              <div class="content__title">
+                <p>New and Now: The Paint Box</p>
+              </div>
+              <div class="read-story">
+                <span>READ STORY</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="newsletter__container eighty column">
+        <div class="newsletter__title">
+          <h1>join our conversation</h1>
+        </div>
+        <div class="newsletter__text">
+          <p>
+            Be the first to hear about new launches and enjoy 10% off your first
+            polish order.
+          </p>
+        </div>
+        <div class="newsletter__email">
+          <input
+            type="email"
+            name="EMAIL"
+            aria-label="Enter your email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="newsletter__submit">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="instagram">
+      <div class="instagram__container eighty row">
+        <div class="instagram__photo half">
+          <img src="img/instagram-img.gif" class="left__photo" />
+        </div>
+        <div class="instagram__text half column">
+          <div class="content__center">
+            <div class="content__category">
+              <h1>outsidethebox</h1>
+            </div>
+            <div class="content__title">
+              <p>
+                Follow us on Instagram and get inspired by our tutorials to make
+                the most of your Power Couples.
+              </p>
+            </div>
+            <div class="content__btn">
+              <button>instagram</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="gallery__container eighty column">
+        <div class="row">
+          <a href="#" class="gallery__photo">
+            <img src="/img/gallery/gallery-img-1.JPG" />
+          </a>
+          <a href="#" class="gallery__photo">
+            <img src="/img/gallery/gallery-img-2.JPG" />
+          </a>
+          <a href="#" class="gallery__photo">
+            <img src="/img/gallery/gallery-img-3.JPG" />
+          </a>
+          <a href="#" class="gallery__photo">
+            <img src="/img/gallery/gallery-img-4.JPG" />
+          </a>
+        </div>
+        <div class="row">
+          <a href="#" class="gallery__photo">
+            <img src="/img/gallery/gallery-img-5.JPG" />
+          </a>
+          <a href="#" class="gallery__photo">
+            <img src="/img/gallery/gallery-img-6.JPG" />
+          </a>
+          <a href="#" class="gallery__photo">
+            <img src="/img/gallery/gallery-img-7.JPG" />
+          </a>
+          <a href="#" class="gallery__photo">
+            <img src="/img/gallery/gallery-img-8.JPG" />
+          </a>
+        </div>
+      </div>
+      <div class="gallery__follow">
+        <p>Follow us at</p>
+        <a href="http://www.google.com">@paintboxnails</a>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer__container full row">
+        <ul class="footer__content">
+          <li>SUPPORT</li>
+          <li><a href="">F.A.Q.</a></li>
+          <li><a href="">PRIVACY POLICY</a></li>
+          <li><a href="">TERMS AND CONDITIONS</a></li>
+          <li>ACCESSIBILITY</li>
+        </ul>
+        <ul class="footer__content">
+          <li>FOLLOW US</li>
+          <li><a href="">INSTAGRAM</a></li>
+          <li><a href="">PINTERESET</a></li>
+          <li><a href="">FACEBOOK</a></li>
+          <li><a href="">NEWSLETTER</a></li>
+        </ul>
+        <ul class="footer__content">
+          <li>PAINTBOX</li>
+          <li><a href="">OUR STUDIOS</a></li>
+          <li><a href="">CAREERS</a></li>
+          <li><a href="">PREESS</a></li>
+          <li><a href="">CONTACT US</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
