@@ -52,7 +52,7 @@ button:hover {
 
 p {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 a {
@@ -154,17 +154,34 @@ img {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
+  padding: 25px 0;
+  background-color: #fff;
+  transition: all 250ms ease-in;
+  z-index: 1;
 }
 
 #navbar li,
 .navbar__menu__logo {
+  transition: all 150ms ease-in;
   cursor: pointer;
+}
+
+.navbar__toggle-btn {
+  display: none;
+}
+
+.navbar__menu__top {
+  display: none;
 }
 
 .navbar__menu__logo {
   width: 90px;
   height: 75px;
+}
+
+.navbar__menu__logo.mini {
+  width: 60px;
+  height: 45px;
 }
 
 .navbar__menu__left,
@@ -179,6 +196,10 @@ img {
 }
 
 /* Intro */
+#intro {
+  padding: 0;
+}
+
 .intro__text {
   background-color: #fbf7f6;
 }
@@ -196,8 +217,8 @@ img {
 }
 
 .product__category,
-.product__content{
-  width:100%;
+.product__content {
+  width: 100%;
 }
 
 .product__category h1 {
@@ -208,22 +229,23 @@ img {
   font-weight: 300;
 }
 
-.product__content{
-  justify-content:center;
+.product__content {
+  justify-content: center;
+  align-items: center;
 }
 
 .product {
   align-items: center;
-  width:33.3%;
+  width: 33.3%;
 }
 
 .product__img {
-  padding:100px 0;
+  padding: 100px 0;
 }
 
 .product__description {
   align-items: center;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .product__title h1 {
@@ -244,7 +266,6 @@ img {
   color: #9d9d9c;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-booto
 }
 
 /* Gift */
@@ -278,11 +299,6 @@ img {
   font-size: 40px;
 }
 
-.inspiration__text span {
-  font-size: 40px;
-  font-weight: 100;
-}
-
 .inspiration__items {
   justify-content: center;
   align-items: center;
@@ -290,7 +306,6 @@ img {
 
 .inspiration__item {
   padding: 10px 30px;
-  border-right: 1px solid #414141;
 }
 
 /* Magazin */
@@ -300,6 +315,10 @@ img {
   align-items: center;
   justify-content: center;
   background-color: #f3ede8;
+}
+
+.magazin__row {
+  display: flex;
 }
 
 .content__center.magazin span {
@@ -335,7 +354,7 @@ img {
 .newsletter__text,
 .newsletter__email,
 .newsletter__title {
-  width: 60%;
+  width: 70%;
   padding: 20px 0;
   text-align: center;
 }
@@ -388,7 +407,8 @@ img {
 }
 
 .gallery__follow {
-  padding: 100px;
+  width: 100%;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -439,4 +459,187 @@ img {
 
 .footer__content li a {
   color: #414141;
+}
+
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 21px;
+  }
+
+  .navbar__menu__right li:first-child,
+  .navbar__menu__left li:last-child,
+  .navbar__menu__left li:nth-child(2n) {
+    display: none;
+  }
+
+  #navbar {
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .navbar__menu__logo {
+    width: 60px;
+    height: 45px;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  .navbar__toggle-btn.hide {
+    display: none;
+  }
+
+  .navbar__menu__left,
+  .navbar__menu__right,
+  .navbar__menu__center {
+    width: 15%;
+  }
+
+  .navbar__menu__top {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #navbar.click {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 0;
+    background-color: #f3ede8;
+  }
+
+  .navbar__menu__left.click,
+  .navbar__menu__right.click {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .navbar__menu__left.click .left__menu__item,
+  .navbar__menu__right.click li {
+    display: block;
+    padding: 30px 20px 20px 0;
+    border-bottom: 2px solid #414141;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  #navbar.click .navbar__menu__center,
+  #navbar.click .navbar__menu__right li:last-child {
+    display: none;
+  }
+
+  .intro__container,
+  .reservation__container,
+  .gift__container,
+  .instagram__container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .intro__photo,
+  .intro__text,
+  .reservation__text,
+  .reservation__photo,
+  .gift__text,
+  .gift__photo,
+  .magazin__text,
+  .magazin__photo,
+  .instagram__text,
+  .instagram__photo,
+  .gallery__container,
+  .product__container {
+    width: 100%;
+  }
+
+  .product {
+    width: 30%;
+  }
+
+  .product__img {
+    padding: 20px 0;
+  }
+
+  .product button {
+    width: 180px;
+  }
+
+  .inspiration__text h2,
+  .inspiration__text span {
+    font-size: 28px;
+  }
+
+  .inspiration__item {
+    padding: 10px;
+  }
+
+  .magazin__photo {
+    order: 1;
+  }
+  .magazin__text {
+    order: 2;
+  }
+
+  .content__center {
+    padding: 40px 80px;
+  }
+
+  .magazin__row {
+    flex-direction: column;
+  }
+
+  .newsletter__text,
+  .newsletter__email,
+  .newsletter__title {
+    width: 80%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .newsletter__email input {
+    font-size: 21px;
+  }
+
+  .gallery__follow p,
+  .gallery__follow a {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .prodcut__content {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  .magazin__container,
+  .newsletter__container,
+  .inspiration__container {
+    width: 100%;
+  }
+
+  .inspiration__text h2,
+  .inspiration__text span {
+    font-size: 23px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__content {
+    width: 100%;
+    padding: 20px 0;
+    border-right: none;
+    border-bottom: 1px solid #414141;
+  }
 }
