@@ -612,7 +612,7 @@ img {
 }
 
 @media screen and (max-width: 787px) {
-  .prodcut__content {
+  .product__content {
     flex-direction: column;
   }
 
