@@ -1,4 +1,4 @@
-# Paint-box
+# Paint-boxx
 
 **Randing Page**<br/>
 `#HTML` `#CSS` `#JS` `RESPONSIVE`
